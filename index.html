@@ -62,24 +62,24 @@
     <div class="modal">
         <button class="modal-button" data-modal-close>
             <svg class="button-img">
-                <use href="./images/sprite.svg#icon-close-black-18dp-2-1"></use>
+                <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
             </svg>
             </button>
 
             <form class="form">
-                <b class="form-title">Оставьте свои данные, мы вам перезвоним</b>
+                <b class="form-title">Оставьте свои данные, мы вам перезвоним</b>                
                     <label class="form-label">
                         <span class="form-name">Имя</span>
                         <svg class="form-icon">
-                            <use href="./images/sprite.svg#icon-person-black-18dp-1"></use>
+                            <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
                         </svg>
-                        <input class="form-input" type="text" name="name">
+                        <input class="form-input" type="text" name="username">                        
                     </label>                
             
                     <label class="form-label">
                         <span class="form-name">Телефон</span>
                         <svg class="form-icon">
-                            <use href="./images/sprite.svg#icon-phone-black-18dp-1"></use>
+                            <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
                         </svg>
                         <input class="form-input" type="text" name="phone">
                     </label>
@@ -87,26 +87,33 @@
                     <label class="form-label">
                         <span class="form-name">Почта</span>
                         <svg class="form-icon">
-                            <use href="./images/sprite.svg#icon-email-black-18dp-1"></use>
+                            <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
                         </svg>
                         <input class="form-input" type="text" name="email">
                     </label>                   
             
                 <label class="label-textarea">
                     <span class="form-name">Комментарий</span>
-                    <textarea class="form-textarea" name="" placeholder="Введите текст"></textarea>
+                    <textarea class="form-textarea" name="textarea" placeholder="Введите текст"></textarea>
                 </label>
 
                 <label class="form-checkbox">
                     <input class="checkbox" type="checkbox" name="checkbox"/>
-                    <span class="label">Соглашаюсь с рассылкой и принимаю<span class="checkbox-agreement"> Условия договора</span></span>
-                    
+                    <svg class="checkbox-icon">
+                        <use href="./images/icons.svg#icon-icon-check"></use>
+                    </svg>
+                    <span class="checkbox-text">
+                        Соглашаюсь с рассылкой и принимаю <a class="checkbox-agreement" href="">Условия договора</a></span>
                 </label>
+              
+
                 <button class="button primary" type="submit">Отправить</button>
             </form>
                     
+    </div>
 </div>
-</section>
+
+    </section>
     <!-- качества -->
 
         <section class="quality-section">
@@ -156,7 +163,6 @@
                 </ul>
             </div>
         </section>
-
 
      <!-- чем мы занимаемся -->
      <section class="section">
@@ -435,7 +441,11 @@
                         <label class="form-mark">
                             <input class="form-fild" type="text" name="subscribe" placeholder="E-mail">
                         </label>
-                        <button class="button primary" type="submit">Подписаться</button>
+                        <button class="button primary" type="submit"><span class="button-text">Подписаться</span>
+                            <svg class="button-icon">
+                                <use href="./images/icons.svg#icon-icon-send"></use>
+                            </svg>
+                        </button>
                     </div>
                 </form>
              </div>
